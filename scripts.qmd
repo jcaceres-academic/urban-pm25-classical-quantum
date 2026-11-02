@@ -1,0 +1,175 @@
+---
+title: "Scripts and Code Provenance"
+subtitle: "Recovered and reconstructed computational materials"
+lang: en
+---
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) 
+[![Rendered with Quarto](https://img.shields.io/badge/Rendered_with-Quarto-4A90E2.svg)](https://quarto.org/) [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fmath13121979-blue.svg)](https://doi.org/10.3390/math13121979) [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.23880802-1682D4?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23880802)
+
+------------------------------------------------------------------------
+
+## 🎯 Purpose
+
+This page documents the provenance of the computational materials associated with the Mathematics 2025 article.
+
+It intentionally contains **no result figures**. Experimental results are presented on the [project home](index.html) and in the [analytical notebook](notebook.html).
+
+------------------------------------------------------------------------
+
+## 🧭 Provenance categories
+
+The repository uses three explicit provenance labels:
+
+- **Recovered / adapted** — based directly on code preserved in the original Google Colab notebook.
+- **Reconstructed** — recreated from methodological details published in the article.
+- **Published values** — transcribed from the paper and not presented as newly recomputed outputs.
+
+This distinction prevents reconstructed material from being misrepresented as original source code.
+
+------------------------------------------------------------------------
+
+## 🗂️ Script inventory
+
+| Script | Provenance | Purpose |
+|---|---|---|
+| `00_prepare_pm25_data.py` | Recovered / adapted | Prepare Plaza Castilla PM2.5 data |
+| `01_exploratory_pm25.py` | Recovered / adapted | Reproduce descriptive temporal analysis |
+| `02_lstm_model_reconstructed.py` | Reconstructed | Reimplement the published LSTM configuration |
+| `03_qsvm_recovered.py` | Recovered / consolidated | Preserve the original Qiskit QSVM workflow |
+| `04_svm_qsvm_proxy_recovered.py` | Recovered | Preserve the classical SVM proxy labelled “simulating QSVM” in the notebook |
+| `05_model_comparison_reconstructed.py` | Reconstructed from published tables | Preserve the reported comparison values |
+
+------------------------------------------------------------------------
+
+## 📓 Original notebook
+
+The recovered Google Colab notebook should be preserved unchanged in:
+
+```text
+notebooks/
+└── 2025_Mathematics_Computers_recovered.ipynb
+```
+
+It contains original material for:
+
+- PM2.5 data preparation;
+- exploratory analysis;
+- QSVM/Qiskit experimentation;
+- classification metrics;
+- and supporting figures.
+
+No complete original LSTM implementation was recovered from the notebook.
+
+------------------------------------------------------------------------
+
+## 🔄 Workflow
+
+```text
+Raw Madrid air-quality data
+        ↓
+00_prepare_pm25_data.py
+        ↓
+01_exploratory_pm25.py
+        ↓
+┌─────────────────────────────┬───────────────────────────┐
+│ 02_lstm_model_              │ 03_qsvm_recovered.py     │
+│ reconstructed.py            │                           │
+└─────────────────────────────┴───────────────────────────┘
+                ↓
+05_model_comparison_reconstructed.py
+```
+
+`04_svm_qsvm_proxy_recovered.py` is retained separately because it is a classical SVM diagnostic that the original notebook explicitly described as **“simulating QSVM”**. It must not be presented as the quantum QSVM implementation.
+
+------------------------------------------------------------------------
+
+## 🧠 Reconstructed LSTM
+
+The LSTM reconstruction follows the model-specific configuration reported in the article:
+
+- Plaza Castilla PM2.5 time series;
+- training period 2017–2023;
+- external test period 2024;
+- one LSTM layer with 64 units;
+- dense output layer;
+- 50 epochs;
+- Adam optimizer;
+- MSE loss;
+- MinMax normalization.
+
+Published metrics used as reference:
+
+```text
+RMSE = 15.98 µg/m³
+MAE  = 4.42 µg/m³
+R²   = 0.05
+```
+
+The reconstructed script is not claimed to reproduce those values exactly because the full original execution environment and preprocessing implementation were not preserved.
+
+------------------------------------------------------------------------
+
+## ⚛️ Recovered QSVM
+
+The recovered notebook preserves a Qiskit-based quantum classification workflow.
+
+The article describes:
+
+- `ZFeatureMap`;
+- three qubits;
+- depth 2;
+- angle encoding;
+- fidelity-based quantum kernel;
+- statevector simulation;
+- 25 µg/m³ binary threshold.
+
+The recovered code relies on a legacy Qiskit API and may require an environment compatible with the versions used during the original experiment.
+
+------------------------------------------------------------------------
+
+## ⚠️ Published-method discrepancies
+
+Two internal discrepancies in the article are relevant for reproduction:
+
+1. **Data split:** the general methodology section describes an 80/20 split, while the dedicated LSTM section describes 2017–2023 training and 2024 external testing.
+2. **R²:** the dedicated LSTM results table gives R² = 0.05, whereas a later comparative table contains a different value.
+
+The repository preserves these discrepancies explicitly and does not silently harmonise them.
+
+------------------------------------------------------------------------
+
+## 📁 Repository structure
+
+```text
+urban-pm25-classical-quantum/
+├── images/
+├── notebooks/
+│   └── 2025_Mathematics_Computers_recovered.ipynb
+├── scripts/
+│   ├── 00_prepare_pm25_data.py
+│   ├── 01_exploratory_pm25.py
+│   ├── 02_lstm_model_reconstructed.py
+│   ├── 03_qsvm_recovered.py
+│   ├── 04_svm_qsvm_proxy_recovered.py
+│   └── 05_model_comparison_reconstructed.py
+├── index.qmd
+├── notebook.qmd
+├── scripts.qmd
+├── _quarto.yml
+├── styles.css
+├── LICENSE
+└── README.md
+```
+
+------------------------------------------------------------------------
+
+## 📚 Article
+
+**DOI:** [10.3390/math13121979](https://doi.org/10.3390/math13121979)
+
+------------------------------------------------------------------------
+
+## ⬅️ Navigation
+
+[Project home](index.html) · [Analytical notebook](notebook.html) · [Academic Home](https://jcaceres-academic.github.io/)

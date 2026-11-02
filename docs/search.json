@@ -1,0 +1,450 @@
+[
+  {
+    "objectID": "index.html#direct-access",
+    "href": "index.html#direct-access",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "🔗 Direct access",
+    "text": "🔗 Direct access\n\n📄 Published article\n💻 Analytical notebook\n🧪 Scripts and code provenance\n💾 GitHub repository"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "🧠 Overview",
+    "text": "🧠 Overview\nThis repository contains the reproducible and recovered computational materials associated with the article “Mathematical Evaluation of Classical and Quantum Predictive Models Applied to PM2.5 Forecasting in Urban Environments.”\nThe study compares two different predictive paradigms applied to real PM2.5 observations from the Plaza Castilla monitoring station in Madrid:\n\nLong Short-Term Memory (LSTM) for continuous time-series prediction;\nQuantum Support Vector Machine (QSVM) for binary classification using quantum kernels.\n\nThe broader objective is not to treat both models as functionally equivalent, but to examine how classical and quantum approaches behave under the same environmental-data context in terms of predictive capability, classification performance and computational efficiency."
+  },
+  {
+    "objectID": "index.html#research-motivation",
+    "href": "index.html#research-motivation",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "🎯 Research motivation",
+    "text": "🎯 Research motivation\nUrban PM2.5 pollution remains an important environmental and public-health concern.\nThe project addresses three complementary questions:\n\nHow have PM2.5 concentrations evolved in Madrid over time?\nHow do pollution patterns differ across districts?\nCan a hybrid Prophet-LSTM model provide useful forecasts for future PM2.5 levels?\n\nThe methodological emphasis is not limited to prediction. The analysis integrates data understanding, preprocessing, descriptive analysis, spatial interpretation and forecasting within a reproducible workflow."
+  },
+  {
+    "objectID": "index.html#methodological-framework",
+    "href": "index.html#methodological-framework",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "🧩 Methodological framework",
+    "text": "🧩 Methodological framework\nThe study follows an adaptation of CRISP-DM to urban environmental data analysis.\n\n\n\n\n\nFig. 1. Adaptation of the CRISP-DM framework used in the study.\nThe modelling stage integrates four analytical components:\n\ndescriptive analysis;\ntrend analysis;\nspatial analysis;\npredictive analysis."
+  },
+  {
+    "objectID": "index.html#data-source-and-monitoring-coverage",
+    "href": "index.html#data-source-and-monitoring-coverage",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "🌍 Data source and monitoring coverage",
+    "text": "🌍 Data source and monitoring coverage\nThe primary source is the Madrid City Council Open Data Portal, which provides official air-quality observations from the municipal monitoring network.\n\n\n\n\n\nFig. 2. Madrid air-quality monitoring stations.\n\n\n\n\n\nFig. 3. Madrid districts with PM2.5 monitoring coverage.\nThe districts analysed include Chamartín, Chamberí, Moncloa-Aravaca, Salamanca, Arganzuela, Carabanchel and Hortaleza."
+  },
+  {
+    "objectID": "index.html#data-preparation",
+    "href": "index.html#data-preparation",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "🔄 Data preparation",
+    "text": "🔄 Data preparation\nThe raw air-quality data were transformed into an analysis-ready structure through a documented preprocessing workflow.\n\n\n\n\n\nFig. 4. Data acquisition and preprocessing workflow.\nThe process includes downloading official source files, validating and cleaning observations, reorganising temporal fields, integrating data from multiple years and generating structured datasets by date, monitoring station, neighbourhood, district and pollutant."
+  },
+  {
+    "objectID": "index.html#temporal-and-spatial-analysis",
+    "href": "index.html#temporal-and-spatial-analysis",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "📊 Temporal and spatial analysis",
+    "text": "📊 Temporal and spatial analysis\nThe descriptive analysis shows a general reduction in average PM2.5 levels over the study period, while important year-to-year fluctuations and pollution peaks remain.\n\n\n\n\n\nFig. 5. Descriptive statistics of PM2.5 levels in Madrid from 2019 to 2024.\n\n\n\n\n\nFig. 6. PM2.5 trends by district from 2019 to 2023.\n\n\n\n\n\nFig. 7. Evolution of PM2.5 concentrations in Madrid from 2019 to 2024.\n\n\n\n\n\nFig. 8. Spatial distribution of PM2.5 concentrations by district."
+  },
+  {
+    "objectID": "index.html#prophet-lstm-forecasting",
+    "href": "index.html#prophet-lstm-forecasting",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "🤖 Prophet-LSTM forecasting",
+    "text": "🤖 Prophet-LSTM forecasting\nThe predictive stage combines Prophet and LSTM. Prophet models trend and seasonality, while LSTM captures nonlinear temporal dependencies in the residual structure.\n\n\n\n\n\nFig. 9. Citywide PM2.5 prediction using the hybrid Prophet-LSTM model.\n\n\n\n\n\nFig. 10. Prophet-LSTM predictions for individual Madrid districts."
+  },
+  {
+    "objectID": "index.html#main-findings",
+    "href": "index.html#main-findings",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "📌 Main findings",
+    "text": "📌 Main findings\n\nPM2.5 concentrations show a general downward trend from 2019 to mid-2024.\nImportant interannual fluctuations and pollution peaks remain.\nPM2.5 behaviour differs across districts, supporting localised analysis.\nProphet-LSTM integrates explicit seasonal structure with nonlinear temporal dependencies.\nForecasts can support planning and environmental decision-making when interpreted together with uncertainty and local monitoring conditions."
+  },
+  {
+    "objectID": "index.html#methodological-interpretation",
+    "href": "index.html#methodological-interpretation",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "🧭 Methodological interpretation",
+    "text": "🧭 Methodological interpretation\nThe main contribution of this work is the integration of open urban data, CRISP-DM and hybrid time-series modelling into a coherent environmental analytics workflow.\nThe repository therefore emphasises reproducibility, transparent preprocessing, temporal and spatial interpretation, open data and forecasting as a decision-support tool."
+  },
+  {
+    "objectID": "index.html#reproducibility",
+    "href": "index.html#reproducibility",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "🔬 Reproducibility",
+    "text": "🔬 Reproducibility\nurban-pm25-prophet-lstm/\n├── docs/\n├── images/\n├── scripts/\n├── index.qmd\n├── notebook.qmd\n├── scripts.qmd\n├── _quarto.yml\n├── styles.css\n├── LICENSE\n└── README.md"
+  },
+  {
+    "objectID": "index.html#bibliographic-references",
+    "href": "index.html#bibliographic-references",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "📚 Bibliographic references",
+    "text": "📚 Bibliographic references\nThe bibliographic reference set used in this project is archived in Zenodo:\nZenodo: 10.5281/zenodo.23880803\nThis Zenodo identifier refers to the bibliographic reference collection, not to the article DOI."
+  },
+  {
+    "objectID": "index.html#citation",
+    "href": "index.html#citation",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "📚 Citation",
+    "text": "📚 Citation\n\nCáceres-Tello, J., & Galán-Hernández, J. J. (2025).\nMathematical Evaluation of Classical and Quantum Predictive Models Applied to PM2.5 Forecasting in Urban Environments.\nMathematics, 13, 1979.\nhttps://doi.org/10.3390/math13121979"
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Analysis and Prediction of PM2.5 Pollution in Madrid",
+    "section": "⚖️ License",
+    "text": "⚖️ License\nThe article is published under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "📬 Contact",
+    "text": "📬 Contact\nJesús Cáceres Tello\nComplutense University of Madrid\n📧 jescacer@ucm.es\n📧 jcaceres.academic@gmail.com\n⬅️ Back to Academic Home"
+  },
+  {
+    "objectID": "notebook.html#purpose",
+    "href": "notebook.html#purpose",
+    "title": "Analytical Notebook",
+    "section": "🧠 Purpose",
+    "text": "🧠 Purpose\nThis notebook complements the project home page with the analytical details of the published experiments.\nThe home page already presents the overall KDD framework and the central LSTM/QSVM comparison. Here the focus is on:\n\nPM2.5 temporal behaviour;\nclassical LSTM model foundations and diagnostics;\nquantum-kernel logic;\nQSVM classification diagnostics;\nand methodological limitations relevant to reproducibility."
+  },
+  {
+    "objectID": "notebook.html#environmental-context",
+    "href": "notebook.html#environmental-context",
+    "title": "Reproducible Notebook",
+    "section": "🌫️ Environmental context",
+    "text": "🌫️ Environmental context\nThe article begins by comparing the relative health relevance of several atmospheric pollutants.\n\n\n\n\n\nFig. 1. Hazard index assigned to the pollutants discussed in the study."
+  },
+  {
+    "objectID": "notebook.html#scientific-context",
+    "href": "notebook.html#scientific-context",
+    "title": "Reproducible Notebook",
+    "section": "📚 Scientific context",
+    "text": "📚 Scientific context\nThe study also reviews the evolution of scientific interest in PM2.5.\n\n\n\n\n\nFig. 2. Publications specifically related to Madrid and PM2.5 by year.\n\n\n\n\n\nFig. 3. Broader temporal evolution of PM2.5 research.\n\n\n\n\n\nFig. 4. Distribution of PM2.5 research output by country or territory."
+  },
+  {
+    "objectID": "notebook.html#crisp-dm-workflow",
+    "href": "notebook.html#crisp-dm-workflow",
+    "title": "Reproducible Notebook",
+    "section": "🧩 CRISP-DM workflow",
+    "text": "🧩 CRISP-DM workflow\nThe analytical process follows an adaptation of CRISP-DM.\n\n\n\n\n\nFig. 5. Adapted CRISP-DM workflow integrating descriptive, trend, spatial and predictive analysis."
+  },
+  {
+    "objectID": "notebook.html#monitoring-network",
+    "href": "notebook.html#monitoring-network",
+    "title": "Reproducible Notebook",
+    "section": "🌍 Monitoring network",
+    "text": "🌍 Monitoring network\nThe study uses official observations from the Madrid City Council monitoring network.\n\n\n\n\n\nFig. 6. Location of atmospheric monitoring stations in Madrid.\n\n\n\n\n\nFig. 7. Districts with direct PM2.5 monitoring coverage."
+  },
+  {
+    "objectID": "notebook.html#data-acquisition-and-preprocessing",
+    "href": "notebook.html#data-acquisition-and-preprocessing",
+    "title": "Reproducible Notebook",
+    "section": "🔄 Data acquisition and preprocessing",
+    "text": "🔄 Data acquisition and preprocessing\nRaw source files are transformed into an integrated structure suitable for analysis.\n\n\n\n\n\nFig. 8. Data download and preprocessing sequence.\nThe published workflow describes two main transformations: an initial cleaning/reorganisation of the raw files and a second transformation into a structured dataset containing date, station, neighbourhood, district and pollutant measurements."
+  },
+  {
+    "objectID": "notebook.html#descriptive-analysis",
+    "href": "notebook.html#descriptive-analysis",
+    "title": "Reproducible Notebook",
+    "section": "📊 Descriptive analysis",
+    "text": "📊 Descriptive analysis\n\n\n\n\n\nFig. 9. Descriptive statistics of PM2.5 levels in Madrid, 2019–2024.\nThe reported results show an overall reduction in mean and median PM2.5 levels, together with substantial variability and episodic peaks."
+  },
+  {
+    "objectID": "notebook.html#trend-analysis",
+    "href": "notebook.html#trend-analysis",
+    "title": "Reproducible Notebook",
+    "section": "📈 Trend analysis",
+    "text": "📈 Trend analysis\n\n\n\n\n\nFig. 10. District-level PM2.5 trends, 2019–2023.\n\n\n\n\n\nFig. 11. Overall evolution of PM2.5 concentrations in Madrid, including reference levels.\n\n\n\n\n\nFig. 12. Temporal evolution by monitoring area/district."
+  },
+  {
+    "objectID": "notebook.html#spatial-analysis",
+    "href": "notebook.html#spatial-analysis",
+    "title": "Reproducible Notebook",
+    "section": "🗺️ Spatial analysis",
+    "text": "🗺️ Spatial analysis\n\n\n\n\n\nFig. 13. Spatial distribution of PM2.5 levels by district across the study period.\nThe spatial analysis supports district-specific interpretation because trends and concentration levels are not homogeneous across the monitored areas."
+  },
+  {
+    "objectID": "notebook.html#predictive-analysis",
+    "href": "notebook.html#predictive-analysis",
+    "title": "Reproducible Notebook",
+    "section": "🤖 Predictive analysis",
+    "text": "🤖 Predictive analysis\nThe forecasting stage combines Prophet and LSTM to represent trend, seasonality and longer-term nonlinear dependencies.\n\n\n\n\n\nFig. 14. Citywide Prophet-LSTM prediction.\n\n\n\n\n\nFig. 15. District-level Prophet-LSTM predictions."
+  },
+  {
+    "objectID": "notebook.html#reproducibility-notes",
+    "href": "notebook.html#reproducibility-notes",
+    "title": "Analytical Notebook",
+    "section": "⚠️ Reproducibility notes",
+    "text": "⚠️ Reproducibility notes\nTwo discrepancies in the published article are relevant when reconstructing the experiments:\n\nData splitting\nThe general methodology section describes an 80/20 split based on 330 observations.\nThe dedicated LSTM section instead describes 2017–2023 for training and 2024 for external testing.\nThe reconstructed LSTM script follows the dedicated LSTM section.\n\n\nLSTM R²\nThe dedicated LSTM results table reports:\nR² = 0.05\nA later comparative table reports a different LSTM R² value.\nThe repository therefore uses the metric reported in the dedicated LSTM results section and flags the later discrepancy rather than attempting to resolve it retrospectively."
+  },
+  {
+    "objectID": "notebook.html#bibliographic-references",
+    "href": "notebook.html#bibliographic-references",
+    "title": "Reproducible Notebook",
+    "section": "📚 Bibliographic references",
+    "text": "📚 Bibliographic references\nThe bibliographic reference set associated with this study is archived in Zenodo:\nZenodo: 10.5281/zenodo.23880803\nThe published article is available at:\nArticle DOI: 10.3390/appliedmath4040076"
+  },
+  {
+    "objectID": "notebook.html#navigation",
+    "href": "notebook.html#navigation",
+    "title": "Analytical Notebook",
+    "section": "⬅️ Navigation",
+    "text": "⬅️ Navigation\nProject home · Scripts and code provenance · Academic Home"
+  },
+  {
+    "objectID": "scripts.html#purpose",
+    "href": "scripts.html#purpose",
+    "title": "Scripts and Code Provenance",
+    "section": "🎯 Purpose",
+    "text": "🎯 Purpose\nThis page documents the provenance of the computational materials associated with the Mathematics 2025 article.\nIt intentionally contains no result figures. Experimental results are presented on the project home and in the analytical notebook."
+  },
+  {
+    "objectID": "scripts.html#analytical-sequence",
+    "href": "scripts.html#analytical-sequence",
+    "title": "Scripts and Analytical Workflow",
+    "section": "🧩 Analytical sequence",
+    "text": "🧩 Analytical sequence\nThe article follows a CRISP-DM-based process:\n\n\n\n\n\nFig. 1. Published methodological workflow.\nThe corresponding analytical sequence is:\n\nData acquisition\nDownload official air-quality files from the Madrid City Council Open Data Portal.\nData understanding\nInspect variables, station coverage, pollutants and missing observations.\nData preparation\nClean and transform the raw source files into an analysis-ready structure.\nDescriptive analysis\nCalculate summary statistics and characterise PM2.5 evolution.\nTrend analysis\nExamine citywide and district-level temporal patterns.\nSpatial analysis\nCompare PM2.5 concentrations across monitored districts.\nPredictive analysis\nApply the Prophet-LSTM hybrid modelling approach.\nEvaluation and interpretation\nInterpret forecasts, uncertainty and implications for urban air-quality management."
+  },
+  {
+    "objectID": "scripts.html#published-preprocessing-logic",
+    "href": "scripts.html#published-preprocessing-logic",
+    "title": "Scripts and Analytical Workflow",
+    "section": "🔄 Published preprocessing logic",
+    "text": "🔄 Published preprocessing logic\nThe article documents a two-stage transformation workflow:\n\n\n\n\n\nFig. 2. Data preparation process recovered from the publication.\nThe target analytical structure includes fields for:\n\ndate;\nmonitoring station;\nneighbourhood;\ndistrict;\npollutant measurements."
+  },
+  {
+    "objectID": "scripts.html#recommended-script-organisation",
+    "href": "scripts.html#recommended-script-organisation",
+    "title": "Scripts and Analytical Workflow",
+    "section": "🗂️ Recommended script organisation",
+    "text": "🗂️ Recommended script organisation\nAs the computational workflow is reconstructed, scripts should be organised by analytical stage rather than by ad hoc execution order.\nscripts/\n├── 00_download_or_import_data.py\n├── 01_clean_transform_data.py\n├── 02_descriptive_analysis.py\n├── 03_temporal_analysis.py\n├── 04_spatial_analysis.py\n├── 05_prophet_lstm_model.py\n├── 06_forecasting.py\n└── 07_export_figures.py\nThese filenames describe the recommended repository structure. They should only be created when the corresponding implementation has been reconstructed and validated."
+  },
+  {
+    "objectID": "scripts.html#prophet-lstm-model",
+    "href": "scripts.html#prophet-lstm-model",
+    "title": "Scripts and Analytical Workflow",
+    "section": "🤖 Prophet-LSTM model",
+    "text": "🤖 Prophet-LSTM model\nThe published methodology combines:\n\nProphet, for trend, seasonality and special-event components;\nLSTM, for nonlinear temporal dependencies in the residual structure.\n\nThe citywide result reported in the article is represented by:\n\n\n\n\n\nFig. 3. Prophet-LSTM citywide forecasting result.\nDistrict-level forecasts are shown in:\n\n\n\n\n\nFig. 4. Prophet-LSTM forecasts by district."
+  },
+  {
+    "objectID": "scripts.html#reproducibility-status",
+    "href": "scripts.html#reproducibility-status",
+    "title": "Scripts and Analytical Workflow",
+    "section": "✅ Reproducibility status",
+    "text": "✅ Reproducibility status\nAt this stage:\n\nthe article and final DOI are available;\nthe figures have been recovered and stored in images/;\nthe bibliography has been archived in Zenodo;\nthe website structure is reproducible with Quarto;\nthe original complete analysis code is not assumed to be preserved.\n\nFuture reconstructed scripts should therefore be versioned transparently and documented as reimplementations based on the published methodology."
+  },
+  {
+    "objectID": "scripts.html#persistent-references",
+    "href": "scripts.html#persistent-references",
+    "title": "Scripts and Analytical Workflow",
+    "section": "📚 Persistent references",
+    "text": "📚 Persistent references\nArticle DOI: 10.3390/appliedmath4040076\nZenodo bibliographic reference set: 10.5281/zenodo.23880803"
+  },
+  {
+    "objectID": "scripts.html#navigation",
+    "href": "scripts.html#navigation",
+    "title": "Scripts and Code Provenance",
+    "section": "⬅️ Navigation",
+    "text": "⬅️ Navigation\nProject home · Analytical notebook · Academic Home"
+  },
+  {
+    "objectID": "index.html#research-objective",
+    "href": "index.html#research-objective",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "🎯 Research objective",
+    "text": "🎯 Research objective\nThe study evaluates the strengths and limitations of classical and quantum machine-learning approaches in a high-variability urban environmental setting.\nThe empirical analysis focuses on:\n\ntemporal PM2.5 behaviour;\nLSTM forecasting performance;\nQSVM threshold classification;\ncomputational time and memory usage;\nthe potential complementarity of classical and quantum models."
+  },
+  {
+    "objectID": "index.html#experimental-framework",
+    "href": "index.html#experimental-framework",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "🧩 Experimental framework",
+    "text": "🧩 Experimental framework\nThe article organises the empirical workflow using an adapted Knowledge Discovery in Databases (KDD) process.\n\n\n\n\n\nFig. 1. KDD process adapted to the comparative modelling of LSTM and QSVM.\nThe modelling stage deliberately compares two different task formulations:\n\n\n\n\n\n\n\n\n\nModel\nParadigm\nMain task\nOutput\n\n\n\n\nLSTM\nClassical deep learning\nTime-series regression\nContinuous PM2.5 prediction\n\n\nQSVM\nQuantum kernel method\nBinary classification\nAcceptable / polluted class"
+  },
+  {
+    "objectID": "index.html#classical-model-lstm",
+    "href": "index.html#classical-model-lstm",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "📈 Classical model: LSTM",
+    "text": "📈 Classical model: LSTM\nThe LSTM experiment uses the Plaza Castilla PM2.5 series to forecast continuous concentration values.\nThe published implementation describes a single LSTM layer with 64 units, followed by a dense output layer, trained for 50 epochs with the Adam optimizer and MSE loss after MinMax normalization.\n\n\n\n\n\nFig. 2. Observed and predicted PM2.5 values for the 2024 LSTM evaluation.\nThe article reports:\n\nRMSE: 15.98 µg/m³\nMAE: 4.42 µg/m³\nR²: 0.05\nTraining time: 29.68 s\nPeak memory: 53.22 MB\n\nThe main limitation is the underestimation of extreme pollution peaks."
+  },
+  {
+    "objectID": "index.html#quantum-model-qsvm",
+    "href": "index.html#quantum-model-qsvm",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "⚛️ Quantum model: QSVM",
+    "text": "⚛️ Quantum model: QSVM\nThe quantum experiment reformulates the problem as binary classification using a 25 µg/m³ threshold.\nThe implementation described in the article uses:\n\nQiskit;\nZFeatureMap;\nthree qubits;\ndepth 2;\nangle encoding;\na fidelity-based quantum kernel;\nand a classical statevector simulator.\n\n\n\n\n\n\nFig. 3. Distribution of real PM2.5 concentrations by predicted QSVM class.\nThe article reports perfect classification metrics in the evaluated experiment and a training time of 0.08 s, with peak memory usage of 54.89 MB."
+  },
+  {
+    "objectID": "index.html#main-interpretation",
+    "href": "index.html#main-interpretation",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "📌 Main interpretation",
+    "text": "📌 Main interpretation\nThe two approaches solve different but complementary tasks.\n\nLSTM preserves temporal continuity and provides continuous forecasts.\nQSVM provides a threshold-based decision mechanism with strong class separation in the reported experiment.\nLSTM is more informative for concentration trajectories, but struggles with extreme events.\nQSVM is more limited in output type, but offers a compact decision boundary for threshold classification.\nThe study frames both paradigms as potentially complementary components of future hybrid environmental-intelligence systems."
+  },
+  {
+    "objectID": "index.html#reproducibility-status",
+    "href": "index.html#reproducibility-status",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "🔬 Reproducibility status",
+    "text": "🔬 Reproducibility status\nThe complete original computational environment was not preserved.\nThis repository therefore distinguishes between:\n\nrecovered code from the original Google Colab notebook;\nreconstructed code based on the methodological details reported in the article;\nand published results transcribed directly from the paper.\n\nThe Scripts and code provenance page documents this distinction explicitly."
+  },
+  {
+    "objectID": "index.html#published-method-notes",
+    "href": "index.html#published-method-notes",
+    "title": "Classical and Quantum PM2.5 Predictive Models",
+    "section": "⚠️ Published-method notes",
+    "text": "⚠️ Published-method notes\nThe article contains two internal inconsistencies that are preserved transparently rather than silently reconciled:\n\nthe methodology section describes an 80/20 split of 330 daily observations, while the dedicated LSTM section describes 2017–2023 as training data and 2024 as an external test set;\nthe dedicated LSTM results table reports R² = 0.05, whereas the later comparative table contains a different value for the LSTM R² score.\n\nFor reproducibility purposes, this repository treats the model-specific LSTM section and its dedicated metrics table as the primary source for the reconstructed LSTM experiment."
+  },
+  {
+    "objectID": "scripts.html",
+    "href": "scripts.html",
+    "title": "Scripts and Code Provenance",
+    "section": "",
+    "text": "DOI"
+  },
+  {
+    "objectID": "scripts.html#provenance-categories",
+    "href": "scripts.html#provenance-categories",
+    "title": "Scripts and Code Provenance",
+    "section": "🧭 Provenance categories",
+    "text": "🧭 Provenance categories\nThe repository uses three explicit provenance labels:\n\nRecovered / adapted — based directly on code preserved in the original Google Colab notebook.\nReconstructed — recreated from methodological details published in the article.\nPublished values — transcribed from the paper and not presented as newly recomputed outputs.\n\nThis distinction prevents reconstructed material from being misrepresented as original source code."
+  },
+  {
+    "objectID": "scripts.html#script-inventory",
+    "href": "scripts.html#script-inventory",
+    "title": "Scripts and Code Provenance",
+    "section": "🗂️ Script inventory",
+    "text": "🗂️ Script inventory\n\n\n\n\n\n\n\n\nScript\nProvenance\nPurpose\n\n\n\n\n00_prepare_pm25_data.py\nRecovered / adapted\nPrepare Plaza Castilla PM2.5 data\n\n\n01_exploratory_pm25.py\nRecovered / adapted\nReproduce descriptive temporal analysis\n\n\n02_lstm_model_reconstructed.py\nReconstructed\nReimplement the published LSTM configuration\n\n\n03_qsvm_recovered.py\nRecovered / consolidated\nPreserve the original Qiskit QSVM workflow\n\n\n04_svm_qsvm_proxy_recovered.py\nRecovered\nPreserve the classical SVM proxy labelled “simulating QSVM” in the notebook\n\n\n05_model_comparison_reconstructed.py\nReconstructed from published tables\nPreserve the reported comparison values"
+  },
+  {
+    "objectID": "scripts.html#original-notebook",
+    "href": "scripts.html#original-notebook",
+    "title": "Scripts and Code Provenance",
+    "section": "📓 Original notebook",
+    "text": "📓 Original notebook\nThe recovered Google Colab notebook should be preserved unchanged in:\nnotebooks/\n└── 2025_Mathematics_Computers_recovered.ipynb\nIt contains original material for:\n\nPM2.5 data preparation;\nexploratory analysis;\nQSVM/Qiskit experimentation;\nclassification metrics;\nand supporting figures.\n\nNo complete original LSTM implementation was recovered from the notebook."
+  },
+  {
+    "objectID": "scripts.html#workflow",
+    "href": "scripts.html#workflow",
+    "title": "Scripts and Code Provenance",
+    "section": "🔄 Workflow",
+    "text": "🔄 Workflow\nRaw Madrid air-quality data\n        ↓\n00_prepare_pm25_data.py\n        ↓\n01_exploratory_pm25.py\n        ↓\n┌─────────────────────────────┬───────────────────────────┐\n│ 02_lstm_model_              │ 03_qsvm_recovered.py     │\n│ reconstructed.py            │                           │\n└─────────────────────────────┴───────────────────────────┘\n                ↓\n05_model_comparison_reconstructed.py\n04_svm_qsvm_proxy_recovered.py is retained separately because it is a classical SVM diagnostic that the original notebook explicitly described as “simulating QSVM”. It must not be presented as the quantum QSVM implementation."
+  },
+  {
+    "objectID": "scripts.html#reconstructed-lstm",
+    "href": "scripts.html#reconstructed-lstm",
+    "title": "Scripts and Code Provenance",
+    "section": "🧠 Reconstructed LSTM",
+    "text": "🧠 Reconstructed LSTM\nThe LSTM reconstruction follows the model-specific configuration reported in the article:\n\nPlaza Castilla PM2.5 time series;\ntraining period 2017–2023;\nexternal test period 2024;\none LSTM layer with 64 units;\ndense output layer;\n50 epochs;\nAdam optimizer;\nMSE loss;\nMinMax normalization.\n\nPublished metrics used as reference:\nRMSE = 15.98 µg/m³\nMAE  = 4.42 µg/m³\nR²   = 0.05\nThe reconstructed script is not claimed to reproduce those values exactly because the full original execution environment and preprocessing implementation were not preserved."
+  },
+  {
+    "objectID": "scripts.html#recovered-qsvm",
+    "href": "scripts.html#recovered-qsvm",
+    "title": "Scripts and Code Provenance",
+    "section": "⚛️ Recovered QSVM",
+    "text": "⚛️ Recovered QSVM\nThe recovered notebook preserves a Qiskit-based quantum classification workflow.\nThe article describes:\n\nZFeatureMap;\nthree qubits;\ndepth 2;\nangle encoding;\nfidelity-based quantum kernel;\nstatevector simulation;\n25 µg/m³ binary threshold.\n\nThe recovered code relies on a legacy Qiskit API and may require an environment compatible with the versions used during the original experiment."
+  },
+  {
+    "objectID": "scripts.html#published-method-discrepancies",
+    "href": "scripts.html#published-method-discrepancies",
+    "title": "Scripts and Code Provenance",
+    "section": "⚠️ Published-method discrepancies",
+    "text": "⚠️ Published-method discrepancies\nTwo internal discrepancies in the article are relevant for reproduction:\n\nData split: the general methodology section describes an 80/20 split, while the dedicated LSTM section describes 2017–2023 training and 2024 external testing.\nR²: the dedicated LSTM results table gives R² = 0.05, whereas a later comparative table contains a different value.\n\nThe repository preserves these discrepancies explicitly and does not silently harmonise them."
+  },
+  {
+    "objectID": "scripts.html#repository-structure",
+    "href": "scripts.html#repository-structure",
+    "title": "Scripts and Code Provenance",
+    "section": "📁 Repository structure",
+    "text": "📁 Repository structure\nurban-pm25-classical-quantum/\n├── images/\n├── notebooks/\n│   └── 2025_Mathematics_Computers_recovered.ipynb\n├── scripts/\n│   ├── 00_prepare_pm25_data.py\n│   ├── 01_exploratory_pm25.py\n│   ├── 02_lstm_model_reconstructed.py\n│   ├── 03_qsvm_recovered.py\n│   ├── 04_svm_qsvm_proxy_recovered.py\n│   └── 05_model_comparison_reconstructed.py\n├── index.qmd\n├── notebook.qmd\n├── scripts.qmd\n├── _quarto.yml\n├── styles.css\n├── LICENSE\n└── README.md"
+  },
+  {
+    "objectID": "scripts.html#article",
+    "href": "scripts.html#article",
+    "title": "Scripts and Code Provenance",
+    "section": "📚 Article",
+    "text": "📚 Article\nDOI: 10.3390/math13121979"
+  },
+  {
+    "objectID": "notebook.html",
+    "href": "notebook.html",
+    "title": "Analytical Notebook",
+    "section": "",
+    "text": "DOI"
+  },
+  {
+    "objectID": "notebook.html#pm2.5-data-plaza-castilla",
+    "href": "notebook.html#pm2.5-data-plaza-castilla",
+    "title": "Analytical Notebook",
+    "section": "🌫️ PM2.5 data: Plaza Castilla",
+    "text": "🌫️ PM2.5 data: Plaza Castilla\nThe study uses real PM2.5 observations from the Plaza Castilla monitoring station in Madrid.\nFor the descriptive analysis of 2024, the article reports 330 valid daily observations after cleaning and transformation.\n\n\n\n\n\nFig. 1. Daily PM2.5 evolution and 7-day moving average for Plaza Castilla in 2024.\nThe series shows clear temporal variability, including pronounced winter peaks."
+  },
+  {
+    "objectID": "notebook.html#monthly-variability",
+    "href": "notebook.html#monthly-variability",
+    "title": "Analytical Notebook",
+    "section": "📊 Monthly variability",
+    "text": "📊 Monthly variability\n\n\n\n\n\nFig. 2. Monthly distribution of PM2.5 values.\nThe article highlights greater dispersion and more outliers during winter months, while the middle months of the year show more compact distributions."
+  },
+  {
+    "objectID": "notebook.html#mathematical-kdd-representation",
+    "href": "notebook.html#mathematical-kdd-representation",
+    "title": "Analytical Notebook",
+    "section": "🧩 Mathematical KDD representation",
+    "text": "🧩 Mathematical KDD representation\nThe article formalises the KDD workflow through data transformation, attribute selection, hypothesis construction and model evaluation.\n\n\n\n\n\nFig. 3. Mathematical representation of the KDD process.\nThis formalisation provides the common methodological context for both predictive paradigms."
+  },
+  {
+    "objectID": "notebook.html#lstm-model",
+    "href": "notebook.html#lstm-model",
+    "title": "Analytical Notebook",
+    "section": "🧠 LSTM model",
+    "text": "🧠 LSTM model\nThe LSTM architecture is presented as the classical sequence-based model.\n\n\n\n\n\nFig. 4. LSTM cell structure and example PM2.5 prediction.\nThe published implementation specifies:\n\none LSTM layer;\n64 units;\ndense output layer;\n50 epochs;\nAdam optimizer;\nMSE loss;\nMinMax normalization to [0,1].\n\nThe dedicated LSTM section states that data from 2017–2023 were used for training and 2024 as an external test set."
+  },
+  {
+    "objectID": "notebook.html#lstm-error-structure",
+    "href": "notebook.html#lstm-error-structure",
+    "title": "Analytical Notebook",
+    "section": "📉 LSTM error structure",
+    "text": "📉 LSTM error structure\nThe observed-vs-predicted scatter plot exposes the main limitation of the classical model.\n\n\n\n\n\nFig. 5. Scatter plot of predicted versus observed PM2.5 values.\nThe model performs reasonably at low-to-moderate concentrations but increasingly underestimates high-concentration events.\nReported test metrics:\n\n\n\nMetric\nValue\n\n\n\n\nRMSE\n15.98 µg/m³\n\n\nMAE\n4.42 µg/m³\n\n\nR²\n0.05\n\n\nTraining time\n29.68 s\n\n\nPeak memory usage\n53.22 MB"
+  },
+  {
+    "objectID": "notebook.html#quantum-kernel-logic",
+    "href": "notebook.html#quantum-kernel-logic",
+    "title": "Analytical Notebook",
+    "section": "⚛️ Quantum-kernel logic",
+    "text": "⚛️ Quantum-kernel logic\nThe QSVM approach maps classical feature vectors into a quantum feature space and evaluates similarity through a quantum kernel.\n\n\n\n\n\nFig. 6. Pseudocode for estimating the quantum kernel from the fidelity between parameterised quantum states.\nThe article describes a Qiskit implementation using a ZFeatureMap, angle encoding and a statevector simulator.\nThe target variable is binarised using 25 µg/m³:\n\nClass 0: PM2.5 ≤ 25 µg/m³\nClass 1: PM2.5 &gt; 25 µg/m³"
+  },
+  {
+    "objectID": "notebook.html#qsvm-classification-diagnostics",
+    "href": "notebook.html#qsvm-classification-diagnostics",
+    "title": "Analytical Notebook",
+    "section": "✅ QSVM classification diagnostics",
+    "text": "✅ QSVM classification diagnostics\n\n\n\n\n\nFig. 7. Confusion matrix for the QSVM classification experiment.\nThe reported experiment shows no misclassifications.\n\n\n\n\n\nFig. 8. Precision and recall by class.\nThe article reports precision, recall and F1-score of 1.00 for both classes in the evaluated configuration.\nReported computational resources:\n\n\n\nResource\nQSVM\n\n\n\n\nTraining time\n0.08 s\n\n\nPeak memory usage\n54.89 MB"
+  },
+  {
+    "objectID": "notebook.html#cross-paradigm-interpretation",
+    "href": "notebook.html#cross-paradigm-interpretation",
+    "title": "Analytical Notebook",
+    "section": "🧭 Cross-paradigm interpretation",
+    "text": "🧭 Cross-paradigm interpretation\nThe comparison must be interpreted carefully because the models do not solve the same prediction task:\n\nLSTM performs continuous regression over a temporal sequence;\nQSVM performs binary classification relative to a pollution threshold.\n\nThe study therefore frames the comparison as cross-paradigm rather than as a strict like-for-like benchmark.\nThe main methodological value lies in showing how both approaches respond to the same environmental context under different operational objectives."
+  },
+  {
+    "objectID": "notebook.html#code-provenance",
+    "href": "notebook.html#code-provenance",
+    "title": "Analytical Notebook",
+    "section": "🔬 Code provenance",
+    "text": "🔬 Code provenance\nThe original Google Colab notebook has been preserved in the repository.\nThe QSVM-related code is partly recoverable from that notebook, whereas the complete original LSTM source code was not recovered. The reconstructed implementation follows the model-specific parameters published in the article.\nSee Scripts and code provenance for details."
+  },
+  {
+    "objectID": "notebook.html#article",
+    "href": "notebook.html#article",
+    "title": "Analytical Notebook",
+    "section": "📚 Article",
+    "text": "📚 Article\nDOI: 10.3390/math13121979"
+  }
+]
